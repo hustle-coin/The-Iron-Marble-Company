@@ -10,8 +10,8 @@ const assets = [
 ];
 
 const packageJson = {
-  name: 'nw-company-tool',
-  version: '0.0.0',
+  name: 'The Iron Marble Company',
+  version: '1.0.0',
   description: 'A tool to organize your new world company',
   author: 'Krise',
   license: 'MIT',

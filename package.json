@@ -1,7 +1,7 @@
 {
   "name": "@nw-company-tool/core",
   "description": "A tool to organize your new world company",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "author": "Krise",
   "license": "MIT",
   "keywords": ["New World", "Company", "Tool", "Gaming"],
