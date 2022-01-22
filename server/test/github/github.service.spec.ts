@@ -21,7 +21,7 @@ describe('GitHub Service', () => {
   });
 
   it('should return correct latest release version if there is no older beta release', async () => {
-    nock('https://api.github.com/').get('/repos/cbartel/nw-company-tool/releases').reply(200, JSON.stringify(releases));
+    nock('https://api.github.com/').get('/repos/cbartel/The-Iron-Marble-Company/releases').reply(200, JSON.stringify(releases));
     const githubService = app.get(GithubService);
     const latestBetaRelease = await githubService.getLatestBetaRelease();
     expect(latestBetaRelease.name).toEqual('v1.0.0');
@@ -29,7 +29,7 @@ describe('GitHub Service', () => {
 
   it('should return correct latest beta release version', async () => {
     nock('https://api.github.com/')
-      .get('/repos/cbartel/nw-company-tool/releases')
+      .get('/repos/cbartel/The-Iron-Marble-Company/releases')
       .reply(200, JSON.stringify(releasesBeta));
     const githubService = app.get(GithubService);
     const latestBetaRelease = await githubService.getLatestBetaRelease();

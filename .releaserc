@@ -55,7 +55,7 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "tar cfvz nw-company-tool.tar.gz -C ./dist ."
+        "prepareCmd": "tar cfvz The-Iron-Marble-Company.tar.gz -C ./dist ."
       }
     ],
     [
@@ -63,7 +63,7 @@
       {
         "assets": [
           {
-            "path": "nw-company-tool.tar.gz",
+            "path": "The-Iron-Marble-Company.tar.gz",
             "label": "node distribution"
           }
         ]

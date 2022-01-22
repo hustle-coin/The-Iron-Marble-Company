@@ -17,12 +17,12 @@ const packageJson = {
   license: 'MIT',
   keywords: ['New World', 'Company', 'Tool', 'Gaming'],
   bugs: {
-    url: 'https://github.com/hustle-coin/nw-company-tool/issues',
+    url: 'https://github.com/hustle-coin/The-Iron-Marble-Company/issues',
   },
-  homepage: 'https://github.com/hustle-coin/nw-company-tool',
+  homepage: 'https://github.com/hustle-coin/The-Iron-Marble-Company',
   repository: {
     type: 'git',
-    url: 'https://github.com/hustle-coin/nw-company-tool.git',
+    url: 'https://github.com/hustle-coin/The-Iron-Marble-Company.git',
   },
   dependencies,
 };

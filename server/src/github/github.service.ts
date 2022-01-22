@@ -11,7 +11,7 @@ export class GithubService {
 
   public getLatestRelease(): Promise<GithubRelease> {
     return firstValueFrom(
-      this.http.get<GithubRelease>('https://api.github.com/repos/cbartel/nw-company-tool/releases/latest').pipe(
+      this.http.get<GithubRelease>('https://api.github.com/repos/cbartel/The-Iron-Marble-Company/releases/latest').pipe(
         map((response) => response.data),
         catchError((error) => {
           if (error.response) {
@@ -32,7 +32,7 @@ export class GithubService {
 
   public getReleases(): Promise<GithubRelease[]> {
     return firstValueFrom(
-      this.http.get<GithubRelease[]>('https://api.github.com/repos/cbartel/nw-company-tool/releases').pipe(
+      this.http.get<GithubRelease[]>('https://api.github.com/repos/cbartel/The-Iron-Marble-Company/releases').pipe(
         map((response) => response.data),
         catchError((error) => {
           if (error.response) {

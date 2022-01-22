@@ -294,15 +294,15 @@ cd /opt/nwct/nwct-server
 Go to https://github.com/hustle-coin/The-Iron-Marble-Company/releases/latest and copy the URL of the node distrubtion asset
 to your clipboard. At this point in time, for NWCT v2.1.0 the URL looks like this:
 
-https://github.com/hustle-coin/The-Iron-Marble-Company/releases/download/v2.1.0/nw-company-tool.tar.gz
+https://github.com/hustle-coin/The-Iron-Marble-Company/releases/download/v2.1.0/The-Iron-Marble-Company.tar.gz
 
 But with never releases, this will change.
 
 Go back to your ssh session, download that file and extract it
 
 ```bash
-wget https://github.com/hustle-coin/The-Iron-Marble-Company/releases/download/v2.1.0/nw-company-tool.tar.gz
-tar -zxvf nw-company-tool.tar.gz
+wget https://github.com/hustle-coin/The-Iron-Marble-Company/releases/download/v2.1.0/The-Iron-Marble-Company.tar.gz
+tar -zxvf The-Iron-Marble-Company.tar.gz
 ```
 
 now try to start your NWCT server for the first time with the --dataPath argument which points to your nwct-data folder

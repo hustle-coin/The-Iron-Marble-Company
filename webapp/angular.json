@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "nw-company-tool": {
+    "The-Iron-Marble-Company": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -86,11 +86,11 @@
           "builder": "ngx-build-plus:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "nw-company-tool:build:production",
+              "browserTarget": "The-Iron-Marble-Company:build:production",
               "extraWebpackConfig": "webpack.prod.config.js"
             },
             "development": {
-              "browserTarget": "nw-company-tool:build:development"
+              "browserTarget": "The-Iron-Marble-Company:build:development"
             }
           },
           "defaultConfiguration": "development",
@@ -102,7 +102,7 @@
         "extract-i18n": {
           "builder": "ngx-build-plus:extract-i18n",
           "options": {
-            "browserTarget": "nw-company-tool:build",
+            "browserTarget": "The-Iron-Marble-Company:build",
             "extraWebpackConfig": "webpack.config.js"
           }
         },
@@ -137,7 +137,7 @@
       }
     }
   },
-  "defaultProject": "nw-company-tool",
+  "defaultProject": "The-Iron-Marble-Company",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics"
   }
