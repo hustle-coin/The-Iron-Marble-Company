@@ -16,7 +16,6 @@
         <img alt="GitHub release (latest SemVer including pre-releases)" src="https://img.shields.io/github/v/release/hustle-coin/The-Iron-Marble-Company?include_prereleases&label=beta&style=flat-square">
         <img alt="GitHub Workflow Status (branch)" src="https://img.shields.io/github/workflow/status/hustle-coin/The-Iron-Marble-Company/Release/main?style=flat-square">
         <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/hustle-coin/The-Iron-Marble-Company?style=flat-square">
-        <img alt="GitHub all releases" src="https://img.shields.io/github/downloads/hustle-coin/The-Iron-Marble-Company?style=flat-square">
         <img alt="GitHub closed issues" src="https://img.shields.io/github/issues-closed/hustle-coin/The-Iron-Marble-Company?style=flat-square">
     </div>
 </div>
