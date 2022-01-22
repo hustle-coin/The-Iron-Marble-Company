@@ -1,4 +1,4 @@
-import { UserAvatar, UserWithPermissions } from '@nw-company-tool/model';
+import { UserAvatar, UserWithPermissions } from '@The-Iron-Marble-Company/model';
 import { Request as ExpressRequest } from 'express';
 
 export enum CookieNames {

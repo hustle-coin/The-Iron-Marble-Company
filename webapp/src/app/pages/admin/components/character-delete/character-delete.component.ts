@@ -1,7 +1,7 @@
 import { Component, Inject } from '@angular/core';
 import { AdminService } from '../../../../services/admin/admin.service';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
-import { UserWithPermissions } from '@nw-company-tool/model';
+import { UserWithPermissions } from '@The-Iron-Marble-Company/model';
 
 @Component({
   selector: 'app-character-delete',

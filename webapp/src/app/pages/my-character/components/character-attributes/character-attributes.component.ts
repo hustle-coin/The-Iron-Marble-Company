@@ -4,7 +4,7 @@ import { debounceTime, map, mergeMap } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
 import { CharacterService } from '../../../../services/character/character.service';
 import { SnackbarService } from '../../../../services/snackbar/snackbar.service';
-import { Attribute, Character } from '@nw-company-tool/model';
+import { Attribute, Character } from '@The-Iron-Marble-Company/model';
 
 @Component({
   selector: 'app-my-character-attributes',

@@ -10,19 +10,19 @@ const assets = [
 ];
 
 const packageJson = {
-  name: 'The Iron Marble Company',
+  name: 'The-Iron-Marble-Company',
   version: '1.0.0',
   description: 'A tool to organize your new world company',
   author: 'Krise',
   license: 'MIT',
   keywords: ['New World', 'Company', 'Tool', 'Gaming'],
   bugs: {
-    url: 'https://github.com/cbartel/nw-company-tool/issues',
+    url: 'https://github.com/hustle-coin/nw-company-tool/issues',
   },
-  homepage: 'https://github.com/cbartel/nw-company-tool',
+  homepage: 'https://github.com/hustle-coin/nw-company-tool',
   repository: {
     type: 'git',
-    url: 'https://github.com/cbartel/nw-company-tool.git',
+    url: 'https://github.com/hustle-coin/nw-company-tool.git',
   },
   dependencies,
 };

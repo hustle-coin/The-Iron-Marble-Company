@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { PluginManifest } from '@nw-company-tool/model';
+import { PluginManifest } from '@The-Iron-Marble-Company/model';
 import { PluginService } from './plugin.service';
 import { Public } from '../login/login.decorator';
 

@@ -16,7 +16,7 @@ import {
   WEAPON_SKILLS_ONE_HANDED,
   WEAPON_SKILLS_RANGED,
   WEAPON_SKILLS_TWO_HANDED
-} from '@nw-company-tool/model';
+} from '@The-Iron-Marble-Company/model';
 import { CharacterService } from '../../../../services/character/character.service';
 import { CharacterDetailComponent } from '../../../../components/character-detail/character-detail.component';
 

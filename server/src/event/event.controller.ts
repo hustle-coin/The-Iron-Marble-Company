@@ -1,7 +1,7 @@
 import { Controller, Sse } from '@nestjs/common';
 import { interval, Observable, Subject } from 'rxjs';
 import { RequiredPermissions } from '../login/login.decorator';
-import { KeepAliveEvent, Permission } from '@nw-company-tool/model';
+import { KeepAliveEvent, Permission } from '@The-Iron-Marble-Company/model';
 import { OnEvent } from '@nestjs/event-emitter';
 
 @Controller('/api/event')

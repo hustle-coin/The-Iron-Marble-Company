@@ -7,7 +7,7 @@ import { Request, Response } from 'express';
 import { firstValueFrom } from 'rxjs';
 import { TokenService } from '../token/token.service';
 import { Public } from './login.decorator';
-import { LoginResponse, LoginUrl } from '@nw-company-tool/model';
+import { LoginResponse, LoginUrl } from '@The-Iron-Marble-Company/model';
 
 @Controller('/api/login')
 @Public()

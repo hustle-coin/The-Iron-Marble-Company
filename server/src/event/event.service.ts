@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { EventEmitter2 } from '@nestjs/event-emitter';
-import { Event } from '@nw-company-tool/model';
+import { Event } from '@The-Iron-Marble-Company/model';
 
 @Injectable()
 export class EventService {

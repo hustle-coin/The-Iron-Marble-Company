@@ -1,7 +1,7 @@
 import { Body, Controller, Get, Param, Post, Put, Req } from '@nestjs/common';
 import { RequiredPermissions } from '../login/login.decorator';
 import { CharacterService } from './character.service';
-import { Character, Permission } from '@nw-company-tool/model';
+import { Character, Permission } from '@The-Iron-Marble-Company/model';
 import { AttributeQueryDto } from './dto/attribute.query.dto';
 import { Request } from '../app.model';
 import { AttributeUpdateDto } from './dto/attribute.update.dto';

@@ -1,5 +1,5 @@
 {
-  "name": "@nw-company-tool/server",
+  "name": "@The-Iron-Marble-Company/server",
   "version": "0.0.0",
   "description": "server for the new world company tool",
   "author": "Krise",
@@ -105,7 +105,7 @@
       "<rootDir>/libs/"
     ],
     "moduleNameMapper": {
-      "^@nw-company-tool/model(|/.*)$": "<rootDir>/libs/model/src/$1"
+      "^@The-Iron-Marble-Company/model(|/.*)$": "<rootDir>/libs/model/src/$1"
     }
   }
 }

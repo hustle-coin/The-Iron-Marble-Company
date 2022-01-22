@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { Args, ArgsService } from '../args/args.service';
 import Path from 'path';
 import * as fs from 'fs-extra';
-import { PluginManifest } from '@nw-company-tool/model';
+import { PluginManifest } from '@The-Iron-Marble-Company/model';
 
 @Injectable()
 export class PluginService {

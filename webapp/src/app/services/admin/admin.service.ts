@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
-import { AdminUser, DeleteUser, EnableUser, UserWithPermissions, Version } from '@nw-company-tool/model';
+import { AdminUser, DeleteUser, EnableUser, UserWithPermissions, Version } from '@The-Iron-Marble-Company/model';
 
 @Injectable({
   providedIn: 'root'

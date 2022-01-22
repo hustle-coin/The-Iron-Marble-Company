@@ -4,7 +4,7 @@ import * as moment from 'moment';
 import { Moment } from 'moment';
 import { ExpeditionService } from '../../../../services/expedition/expedition.service';
 import { MatDialogRef } from '@angular/material/dialog';
-import { ExpeditionName, Role } from '@nw-company-tool/model';
+import { ExpeditionName, Role } from '@The-Iron-Marble-Company/model';
 
 type CreateExpeditionForm = {
   date: Moment;

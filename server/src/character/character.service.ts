@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Attribute, Character } from '@nw-company-tool/model';
+import { Attribute, Character } from '@The-Iron-Marble-Company/model';
 import { DatabaseClient } from '../database/database.client';
 
 @Injectable()

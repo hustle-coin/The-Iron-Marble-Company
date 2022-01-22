@@ -4,7 +4,7 @@ import { forkJoin, Observable } from 'rxjs';
 import { CharacterService } from '../../../../services/character/character.service';
 import { UserService } from '../../../../services/user/user.service';
 import { SnackbarService } from '../../../../services/snackbar/snackbar.service';
-import { Attribute, Character } from '@nw-company-tool/model';
+import { Attribute, Character } from '@The-Iron-Marble-Company/model';
 
 @Component({
   selector: 'app-my-character-basic',

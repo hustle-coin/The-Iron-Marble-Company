@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { PluginDefinition } from './plugin.model';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
-import { PluginManifest } from '@nw-company-tool/model';
+import { PluginManifest } from '@The-Iron-Marble-Company/model';
 
 @Injectable({
   providedIn: 'root'

@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { FormControl } from '@angular/forms';
 import { UserService } from '../../../../services/user/user.service';
-import { CreateUser } from '@nw-company-tool/model';
+import { CreateUser } from '@The-Iron-Marble-Company/model';
 
 @Component({
   selector: 'app-register',

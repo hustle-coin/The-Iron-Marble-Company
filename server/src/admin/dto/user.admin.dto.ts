@@ -1,5 +1,5 @@
 import { IsBoolean, IsNumber } from 'class-validator';
-import { AdminUser } from '@nw-company-tool/model';
+import { AdminUser } from '@The-Iron-Marble-Company/model';
 
 export class AdminUserDto implements AdminUser {
   @IsNumber()

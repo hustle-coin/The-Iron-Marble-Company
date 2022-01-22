@@ -1,6 +1,6 @@
 import * as fs from 'fs-extra';
 import { Args, ArgsService } from '../args/args.service';
-import { ClientConfig, ServerConfig } from '@nw-company-tool/model';
+import { ClientConfig, ServerConfig } from '@The-Iron-Marble-Company/model';
 
 const defaultConfig: ServerConfig = {
   DISCORD: {

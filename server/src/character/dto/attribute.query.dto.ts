@@ -1,4 +1,4 @@
-import { Attribute, AttributeQuery } from '@nw-company-tool/model';
+import { Attribute, AttributeQuery } from '@The-Iron-Marble-Company/model';
 import { IsArray, IsNotEmpty } from 'class-validator';
 
 export class AttributeQueryDto implements AttributeQuery {

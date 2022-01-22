@@ -17,7 +17,7 @@
     ],
     "noImplicitAny": true,
     "paths": {
-      "@nw-company-tool/model": ["../libs/model/src/index"]
+      "@The-Iron-Marble-Company/model": ["../libs/model/src/index"]
     }
   }
 }

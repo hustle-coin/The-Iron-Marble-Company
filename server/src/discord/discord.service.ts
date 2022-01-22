@@ -3,7 +3,7 @@ import { URLSearchParams } from 'url';
 import { ConfigService } from '../config/config.service';
 import { HttpException, Injectable } from '@nestjs/common';
 import { HttpService } from '@nestjs/axios';
-import { TokenResponse, UserResponse } from '@nw-company-tool/model';
+import { TokenResponse, UserResponse } from '@The-Iron-Marble-Company/model';
 
 @Injectable()
 export class DiscordService {

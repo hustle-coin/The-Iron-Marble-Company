@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { UserService } from '../../../../services/user/user.service';
 import { Subscription } from 'rxjs';
-import { Permission } from '@nw-company-tool/model';
+import { Permission } from '@The-Iron-Marble-Company/model';
 
 @Component({
   selector: 'app-account-disabled',

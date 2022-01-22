@@ -6,7 +6,7 @@ import { ArgsService, Flags } from '../args/args.service';
 import { Readable } from 'stream';
 import zlib from 'zlib';
 import tar from 'tar-stream';
-import { GithubRelease, ServerRestartEvent, ServerUpdateEvent, Version } from '@nw-company-tool/model';
+import { GithubRelease, ServerRestartEvent, ServerUpdateEvent, Version } from '@The-Iron-Marble-Company/model';
 import { EventService } from '../event/event.service';
 
 const logger = new Logger('NWCT Server');

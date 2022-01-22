@@ -36,7 +36,7 @@
       "dom"
     ],
     "paths": {
-      "@nw-company-tool/model": [
+      "@The-Iron-Marble-Company/model": [
         "../libs/model/src"
       ]
     }

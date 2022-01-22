@@ -2,7 +2,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { Observable, of } from 'rxjs';
 import { debounceTime, map, mergeMap } from 'rxjs/operators';
-import { Attribute, Character } from '@nw-company-tool/model';
+import { Attribute, Character } from '@The-Iron-Marble-Company/model';
 import { CharacterService } from '../../../../services/character/character.service';
 import { SnackbarService } from '../../../../services/snackbar/snackbar.service';
 

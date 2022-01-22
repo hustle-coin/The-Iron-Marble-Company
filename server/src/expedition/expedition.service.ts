@@ -11,7 +11,7 @@ import {
   Participant,
   Role,
   User,
-} from '@nw-company-tool/model';
+} from '@The-Iron-Marble-Company/model';
 import { ExpeditionParticipant } from '@prisma/client';
 import { DatabaseClient } from '../database/database.client';
 import { EventService } from '../event/event.service';

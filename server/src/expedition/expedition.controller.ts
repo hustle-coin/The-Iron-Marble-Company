@@ -1,6 +1,6 @@
 import { Body, Controller, Get, HttpException, Post, Req } from '@nestjs/common';
 import { RequiredPermissions } from '../login/login.decorator';
-import { Expedition, Permission } from '@nw-company-tool/model';
+import { Expedition, Permission } from '@The-Iron-Marble-Company/model';
 import { CreateExpeditionDto } from './dto/expedition.create.dto';
 import { Request } from '../app.model';
 import { ExpeditionService } from './expedition.service';

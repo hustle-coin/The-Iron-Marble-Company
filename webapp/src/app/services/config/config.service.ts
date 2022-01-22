@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, ReplaySubject } from 'rxjs';
-import { ClientConfig, Version } from '@nw-company-tool/model';
+import { ClientConfig, Version } from '@The-Iron-Marble-Company/model';
 
 @Injectable({ providedIn: 'root' })
 export class ConfigService {

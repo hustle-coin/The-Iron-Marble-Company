@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { UserService } from '../services/user/user.service';
 import { Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
-import { Permission } from '@nw-company-tool/model';
+import { Permission } from '@The-Iron-Marble-Company/model';
 
 @Injectable()
 export class LoginGuard implements CanActivate {

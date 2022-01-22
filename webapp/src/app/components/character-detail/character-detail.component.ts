@@ -1,6 +1,6 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
-import { Attribute, Character } from '@nw-company-tool/model';
+import { Attribute, Character } from '@The-Iron-Marble-Company/model';
 import { CharacterService } from '../../services/character/character.service';
 
 export interface CharacterDetailDialogData {

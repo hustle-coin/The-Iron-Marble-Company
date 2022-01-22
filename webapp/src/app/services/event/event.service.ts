@@ -1,6 +1,6 @@
 import { Injectable, NgZone } from '@angular/core';
 import { UserService } from '../user/user.service';
-import { Event, EventType, KeepAliveEvent } from '@nw-company-tool/model';
+import { Event, EventType, KeepAliveEvent } from '@The-Iron-Marble-Company/model';
 import { interval, Observable, Subject, Subscription } from 'rxjs';
 import { filter, map } from 'rxjs/operators';
 import * as moment from 'moment';

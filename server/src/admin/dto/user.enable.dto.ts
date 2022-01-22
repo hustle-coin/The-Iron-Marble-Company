@@ -1,5 +1,5 @@
 import { IsBoolean, IsNumber } from 'class-validator';
-import { EnableUser } from '@nw-company-tool/model';
+import { EnableUser } from '@The-Iron-Marble-Company/model';
 
 export class EnableUserDto implements EnableUser {
   @IsNumber()

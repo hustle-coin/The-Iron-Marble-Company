@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable, ReplaySubject } from 'rxjs';
 import { map, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
-import { LoginResponse, Permission, SetCharacterName, UserAvatar, UserWithPermissions } from '@nw-company-tool/model';
+import { LoginResponse, Permission, SetCharacterName, UserAvatar, UserWithPermissions } from '@The-Iron-Marble-Company/model';
 
 @Injectable({
   providedIn: 'root'

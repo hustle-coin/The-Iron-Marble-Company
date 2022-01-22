@@ -4,7 +4,7 @@ import { UserService } from './user.service';
 import { TokenService } from '../token/token.service';
 import { SetCharacterNameDto } from './dto/charactername.set.dto';
 import { LoggedIn, Public, RequiredPermissions } from '../login/login.decorator';
-import { Permission, UserAvatar, UserWithPermissions } from '@nw-company-tool/model';
+import { Permission, UserAvatar, UserWithPermissions } from '@The-Iron-Marble-Company/model';
 
 @Controller('/api/user')
 @RequiredPermissions(Permission.ENABLED)

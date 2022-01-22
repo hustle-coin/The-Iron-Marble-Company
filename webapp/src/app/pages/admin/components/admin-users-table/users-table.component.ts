@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSlideToggleChange } from '@angular/material/slide-toggle';
-import { Permission, User, UserWithPermissions } from '@nw-company-tool/model';
+import { Permission, User, UserWithPermissions } from '@The-Iron-Marble-Company/model';
 import { AdminService } from '../../../../services/admin/admin.service';
 import { UserService } from '../../../../services/user/user.service';
 import { SnackbarService } from '../../../../services/snackbar/snackbar.service';

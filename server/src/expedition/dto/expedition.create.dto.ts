@@ -1,4 +1,4 @@
-import { CreateExpedition, ExpeditionName, Role } from '@nw-company-tool/model';
+import { CreateExpedition, ExpeditionName, Role } from '@The-Iron-Marble-Company/model';
 import { IsBoolean, IsDateString, IsEnum } from 'class-validator';
 
 export class CreateExpeditionDto implements CreateExpedition {

@@ -4,7 +4,7 @@ import { Reflector } from '@nestjs/core';
 import { Cookies, Request } from '../app.model';
 import { UserService } from '../user/user.service';
 import { TokenService } from '../token/token.service';
-import { Permission } from '@nw-company-tool/model';
+import { Permission } from '@The-Iron-Marble-Company/model';
 
 @Injectable()
 export class LoginGuard implements CanActivate {

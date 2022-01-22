@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { Permission, User, UserAvatar, UserWithPermissions } from '@nw-company-tool/model';
+import { Permission, User, UserAvatar, UserWithPermissions } from '@The-Iron-Marble-Company/model';
 import { DatabaseClient } from '../database/database.client';
 
 @Injectable()

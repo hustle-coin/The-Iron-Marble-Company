@@ -9,7 +9,7 @@ import {
   ExpeditionLeaveEvent,
   JoinExpedition,
   LeaveExpedition
-} from '@nw-company-tool/model';
+} from '@The-Iron-Marble-Company/model';
 import { Observable, ReplaySubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { EventService } from '../event/event.service';

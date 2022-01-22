@@ -1,4 +1,4 @@
-import { JoinExpedition, Role } from '@nw-company-tool/model';
+import { JoinExpedition, Role } from '@The-Iron-Marble-Company/model';
 import { IsBoolean, IsEnum, IsNumber } from 'class-validator';
 
 export class JoinExpeditionDto implements JoinExpedition {

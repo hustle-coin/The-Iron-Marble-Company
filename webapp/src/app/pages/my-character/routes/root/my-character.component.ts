@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CharacterService } from '../../../../services/character/character.service';
 import { ReplaySubject } from 'rxjs';
 import { UserService } from '../../../../services/user/user.service';
-import { Character } from '@nw-company-tool/model';
+import { Character } from '@The-Iron-Marble-Company/model';
 
 @Component({
   selector: 'app-my-character',

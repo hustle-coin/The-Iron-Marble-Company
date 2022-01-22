@@ -4,7 +4,7 @@ import { AdminService } from './admin.service';
 import { Public, RequiredPermissions } from '../login/login.decorator';
 import { EnableUserDto } from './dto/user.enable.dto';
 import { AdminUserDto } from './dto/user.admin.dto';
-import { Permission, UserWithPermissions, Version } from '@nw-company-tool/model';
+import { Permission, UserWithPermissions, Version } from '@The-Iron-Marble-Company/model';
 import { DeleteUserDto } from './dto/user.delete.dto';
 
 @Controller('/api/admin')

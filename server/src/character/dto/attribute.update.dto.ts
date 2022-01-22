@@ -1,4 +1,4 @@
-import { Attribute, AttributeUpdate } from '@nw-company-tool/model';
+import { Attribute, AttributeUpdate } from '@The-Iron-Marble-Company/model';
 import { IsAlphanumeric, IsEnum, IsString } from 'class-validator';
 
 export class AttributeUpdateDto implements AttributeUpdate {

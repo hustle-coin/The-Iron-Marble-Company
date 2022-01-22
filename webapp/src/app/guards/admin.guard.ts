@@ -2,7 +2,7 @@ import { CanActivate, Router } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { UserService } from '../services/user/user.service';
 import { Observable } from 'rxjs';
-import { Permission } from '@nw-company-tool/model';
+import { Permission } from '@The-Iron-Marble-Company/model';
 import { map } from 'rxjs/operators';
 
 @Injectable()

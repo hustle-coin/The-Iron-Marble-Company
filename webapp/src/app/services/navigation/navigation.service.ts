@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { UserService } from '../user/user.service';
-import { Permission } from '@nw-company-tool/model';
+import { Permission } from '@The-Iron-Marble-Company/model';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
 

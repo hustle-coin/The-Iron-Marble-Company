@@ -1,7 +1,7 @@
 import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
-import { Expedition, Participant, Permission, Role } from '@nw-company-tool/model';
+import { Expedition, Participant, Permission, Role } from '@The-Iron-Marble-Company/model';
 import { ExpeditionService } from '../../../../services/expedition/expedition.service';
 import { MatDialog } from '@angular/material/dialog';
 import { ExpeditionCreateComponent } from '../expedition-create/expedition-create.component';

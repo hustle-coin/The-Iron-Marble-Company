@@ -4,7 +4,7 @@ import * as moment from 'moment';
 import { ExpeditionService } from '../../../../services/expedition/expedition.service';
 import { first, map, mergeMap } from 'rxjs/operators';
 import { EventClickArg, EventSourceInput } from '@fullcalendar/core';
-import { CalendarEventType, Expedition } from '@nw-company-tool/model';
+import { CalendarEventType, Expedition } from '@The-Iron-Marble-Company/model';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription } from 'rxjs';

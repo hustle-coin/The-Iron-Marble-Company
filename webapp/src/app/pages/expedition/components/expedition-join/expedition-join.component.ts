@@ -1,6 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { ExpeditionService } from '../../../../services/expedition/expedition.service';
-import { Expedition } from '@nw-company-tool/model';
+import { Expedition } from '@The-Iron-Marble-Company/model';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 import { FormControl } from '@angular/forms';
 import { Slot } from '../expedition-table/expedition-table.component';

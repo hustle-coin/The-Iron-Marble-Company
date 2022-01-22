@@ -1,5 +1,5 @@
 import { IsString, Matches, MaxLength, MinLength } from 'class-validator';
-import { SetCharacterName } from '@nw-company-tool/model';
+import { SetCharacterName } from '@The-Iron-Marble-Company/model';
 
 export class SetCharacterNameDto implements SetCharacterName {
   @Matches(/^[a-zA-Z0-9\s]+$/)

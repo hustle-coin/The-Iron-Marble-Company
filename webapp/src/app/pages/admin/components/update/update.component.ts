@@ -2,7 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { AdminService } from '../../../../services/admin/admin.service';
 import { EventService } from '../../../../services/event/event.service';
 import { Subscription } from 'rxjs';
-import { ServerRestartEvent, ServerUpdateEvent } from '@nw-company-tool/model';
+import { ServerRestartEvent, ServerUpdateEvent } from '@The-Iron-Marble-Company/model';
 import { FormControl } from '@angular/forms';
 import { SnackbarService } from '../../../../services/snackbar/snackbar.service';
 

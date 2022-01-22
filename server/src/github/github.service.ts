@@ -2,7 +2,7 @@ import { HttpException, Injectable } from '@nestjs/common';
 import { Readable } from 'stream';
 import { HttpService } from '@nestjs/axios';
 import { catchError, firstValueFrom, map } from 'rxjs';
-import { GithubRelease } from '@nw-company-tool/model';
+import { GithubRelease } from '@The-Iron-Marble-Company/model';
 import semver from 'semver';
 
 @Injectable()
