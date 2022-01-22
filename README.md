@@ -6,10 +6,7 @@
     ⛏ The Iron Marble Company 🔨
 </h1>
 
-<!-- <div align='center' style='display: flex;flex-direction: column;align-content: center'>
-    <div>
-        <a href="https://ko-fi.com/J3J37247V" target='_blank'><img alt="Support me on Ko-fi" src="https://ko-fi.com/img/githubbutton_sm.svg" /></a>
-    </div> -->
+<div align='center' style='display: flex;flex-direction: column;align-content: center'>
     <div>
         <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/hustle-coin/The-Iron-Marble-Company?style=social" />
         <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/hustle-coin/The-Iron-Marble-Company?style=social">
