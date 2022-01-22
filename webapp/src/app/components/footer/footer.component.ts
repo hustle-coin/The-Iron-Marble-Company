@@ -16,6 +16,6 @@ export class FooterComponent implements OnInit {
   }
 
   openGithub(): void {
-    window.open('https://github.com/cbartel/nw-company-tool', '_blank');
+    window.open('https://github.com/hustle-coin/The-Iron-Marble-Company', '_blank');
   }
 }
