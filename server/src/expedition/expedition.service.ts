@@ -21,7 +21,6 @@ type ExpeditionQueryResult = {
   name: string;
   beginDateTime: Date;
   User: User;
-  hasMutatedOrb: hasMutatedOrb;
   ExpeditionParticipant: (ExpeditionParticipant & { User: User })[];
 };
 
@@ -159,7 +158,6 @@ export class ExpeditionService {
     return {
       id: result.id,
       name: result.name,
-      hasMutatedOrb: result.hasMutatedOrb,
       beginDateTime: result.beginDateTime.toISOString(),
       owner: {
         userId: result.User.id,
