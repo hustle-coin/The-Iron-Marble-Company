@@ -39,6 +39,7 @@ model Expedition {
   id                    Int                     @id @unique(map: "Expedition_id_uindex") @default(autoincrement())
   userId                Int
   name                  String
+  hasMutatedOrb         Boolean    @default(false)
   beginDateTime         DateTime
   User                  User                    @relation(fields: [userId], references: [id], onDelete: Cascade)
   ExpeditionParticipant ExpeditionParticipant[]

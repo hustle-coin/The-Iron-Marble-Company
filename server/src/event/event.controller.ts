@@ -5,7 +5,7 @@ import { KeepAliveEvent, Permission } from '@The-Iron-Marble-Company/model';
 import { OnEvent } from '@nestjs/event-emitter';
 
 @Controller('/api/event')
-@RequiredPermissions(Permission.ENABLED)
+@RequiredPermissions(Permission.ENABLED || Permission.COMPANY)
 export class EventController {
   private event$ = new Subject<string>();
 

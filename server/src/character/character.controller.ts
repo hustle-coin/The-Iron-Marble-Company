@@ -7,7 +7,7 @@ import { Request } from '../app.model';
 import { AttributeUpdateDto } from './dto/attribute.update.dto';
 
 @Controller('/api/character')
-@RequiredPermissions(Permission.ENABLED)
+@RequiredPermissions(Permission.ENABLED || Permission.COMPANY)
 export class CharacterController {
   constructor(private characterService: CharacterService) {}
 

@@ -8,6 +8,9 @@ export class CreateExpeditionDto implements CreateExpedition {
   @IsBoolean()
   hasTuningOrb: boolean;
 
+  @IsBoolean()
+  hasMutatedOrb: boolean;
+
   @IsEnum(ExpeditionName)
   name: ExpeditionName;
 

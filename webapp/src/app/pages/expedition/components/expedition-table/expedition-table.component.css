@@ -38,6 +38,11 @@
     width: 100px !important;
 }
 
+.mat-column-mutated-orb {
+    flex: 0 0 100px !important;
+    width: 100px !important;
+}
+
 .mat-column-participants {
     flex: 1 1 250px !important;
     width: 250px !important;

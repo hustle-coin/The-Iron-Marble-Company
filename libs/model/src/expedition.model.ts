@@ -4,6 +4,7 @@ export type CreateExpedition = {
   name: ExpeditionName;
   beginDateTime: string;
   hasTuningOrb: boolean;
+  hasMutatedOrb: boolean;
   role: Role;
 };
 
@@ -24,6 +25,7 @@ export type LeaveExpedition = {
 export type Expedition = {
   id: number;
   name: string;
+  hasMutatedOrb: boolean;
   beginDateTime: string;
   participants: Participant[];
   owner: Owner;

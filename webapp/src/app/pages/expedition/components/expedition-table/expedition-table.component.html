@@ -30,6 +30,14 @@
       <mat-cell *matCellDef='let row'> {{countTuningOrbs(row)}} </mat-cell>
     </ng-container>
 
+    <!-- Mutated Orb Column -->
+    <ng-container matColumnDef='mutated-orb'>
+      <mat-header-cell *matHeaderCellDef> Mutated</mat-header-cell>
+      <mat-cell *matCellDef='let row'>
+          <mat-icon>bug_report</mat-icon>
+      </mat-cell>
+    </ng-container>
+
     <!-- Owner Column -->
     <ng-container matColumnDef='participants'>
       <mat-header-cell *matHeaderCellDef> Participants</mat-header-cell>

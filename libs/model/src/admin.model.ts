@@ -14,6 +14,16 @@ export interface EnableUser {
   enabled: boolean;
 }
 
+export interface CompanyUser {
+  userId: number;
+  company: boolean;
+}
+
+export interface OfficerUser {
+  userId: number;
+  officer: boolean;
+}
+
 export interface DeleteUser {
   userId: number;
 }

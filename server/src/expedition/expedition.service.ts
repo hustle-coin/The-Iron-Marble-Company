@@ -20,6 +20,7 @@ type ExpeditionQueryResult = {
   id: number;
   name: string;
   beginDateTime: Date;
+  hasMutatedOrb: boolean;
   User: User;
   ExpeditionParticipant: (ExpeditionParticipant & { User: User })[];
 };
@@ -36,6 +37,7 @@ export class ExpeditionService {
           name: true,
           beginDateTime: true,
           User: true,
+          hasMutatedOrb: true,
           ExpeditionParticipant: {
             include: {
               User: true,
@@ -57,6 +59,7 @@ export class ExpeditionService {
           name: true,
           beginDateTime: true,
           User: true,
+          hasMutatedOrb: true,
           ExpeditionParticipant: {
             include: {
               User: true,
@@ -123,6 +126,7 @@ export class ExpeditionService {
     const createResult = await this.client.expedition.create({
       data: {
         name: expeditionData.name,
+        hasMutatedOrb: expeditionData.hasMutatedOrb,
         beginDateTime: expeditionData.beginDateTime,
         User: {
           connect: {
@@ -155,6 +159,7 @@ export class ExpeditionService {
     return {
       id: result.id,
       name: result.name,
+      hasMutatedOrb: result.hasMutatedOrb,
       beginDateTime: result.beginDateTime.toISOString(),
       owner: {
         userId: result.User.id,
