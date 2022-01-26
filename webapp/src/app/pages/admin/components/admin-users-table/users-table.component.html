@@ -39,7 +39,7 @@
 
     <!-- Company Column -->
     <ng-container matColumnDef="company">
-      <th mat-header-cell *matHeaderCellDef>Company Member</th>
+      <th mat-header-cell *matHeaderCellDef>Member</th>
       <td mat-cell *matCellDef="let element">
         <mat-slide-toggle [checked]="isCompany(element)" (change)="company($event, element)"
                           [disabled]="(getUserId() | async) === element.id"></mat-slide-toggle>
