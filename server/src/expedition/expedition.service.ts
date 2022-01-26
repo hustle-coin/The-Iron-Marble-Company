@@ -133,6 +133,7 @@ export class ExpeditionService {
           create: {
             userId: user.id,
             hasTuningOrb: expeditionData.hasTuningOrb,
+            hasMutatedOrb: expeditionData.hasMutatedOrb,
             role: expeditionData.role,
           },
         },
@@ -159,6 +160,7 @@ export class ExpeditionService {
       owner: {
         userId: result.User.id,
         characterName: result.User.characterName,
+        hasMutatedOrb: result.hasMutatedOrb,
         discordId: result.User.discordId,
       },
       participants: result.ExpeditionParticipant.map((participant) => ExpeditionService.mapToParticipant(participant)),

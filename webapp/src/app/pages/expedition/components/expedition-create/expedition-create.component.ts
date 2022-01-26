@@ -11,6 +11,7 @@ type CreateExpeditionForm = {
   time: string;
   expedition: ExpeditionName;
   hasKey: boolean;
+  hasMutated: boolean;
   role: Role;
 };
 
@@ -26,6 +27,7 @@ export class ExpeditionCreateComponent {
     time: new FormControl(moment().format('HH:mm'), [Validators.required]),
     expedition: new FormControl(null, [Validators.required]),
     hasKey: new FormControl(false),
+    hasMutated: new FormControl(false),
     role: new FormControl(null, [Validators.required])
   });
 
@@ -49,6 +51,7 @@ export class ExpeditionCreateComponent {
           name: formData.expedition,
           beginDateTime,
           hasTuningOrb: formData.hasKey,
+          hasMutatedOrb: formData.hasMutated,
           role: formData.role
         })
         .subscribe(() => {

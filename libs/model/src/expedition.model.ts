@@ -4,6 +4,7 @@ export type CreateExpedition = {
   name: ExpeditionName;
   beginDateTime: string;
   hasTuningOrb: boolean;
+  hasMutatedOrb: boolean;
   role: Role;
 };
 

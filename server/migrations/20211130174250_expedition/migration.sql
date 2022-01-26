@@ -3,6 +3,7 @@ CREATE TABLE "Expedition" (
     "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
     "userId" INTEGER NOT NULL,
     "name" TEXT NOT NULL,
+    "hasMutatedOrb" BOOLEAN NOT NULL DEFAULT false,
     "beginDateTime" DATETIME NOT NULL,
     CONSTRAINT "Expedition_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User" ("id") ON DELETE CASCADE ON UPDATE CASCADE
 );
