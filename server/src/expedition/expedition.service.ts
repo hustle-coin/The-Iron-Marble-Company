@@ -123,6 +123,7 @@ export class ExpeditionService {
     const createResult = await this.client.expedition.create({
       data: {
         name: expeditionData.name,
+        hasMutatedOrb: expeditionData.hasMutatedOrb,
         beginDateTime: expeditionData.beginDateTime,
         User: {
           connect: {
@@ -133,7 +134,6 @@ export class ExpeditionService {
           create: {
             userId: user.id,
             hasTuningOrb: expeditionData.hasTuningOrb,
-            hasMutatedOrb: expeditionData.hasMutatedOrb,
             role: expeditionData.role,
           },
         },
@@ -156,11 +156,11 @@ export class ExpeditionService {
     return {
       id: result.id,
       name: result.name,
+      hasMutatedOrb: result.hasMutatedOrb,
       beginDateTime: result.beginDateTime.toISOString(),
       owner: {
         userId: result.User.id,
         characterName: result.User.characterName,
-        hasMutatedOrb: result.hasMutatedOrb,
         discordId: result.User.discordId,
       },
       participants: result.ExpeditionParticipant.map((participant) => ExpeditionService.mapToParticipant(participant)),
