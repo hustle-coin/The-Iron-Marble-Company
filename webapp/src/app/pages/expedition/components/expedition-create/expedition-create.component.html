@@ -25,7 +25,14 @@
       </mat-select>
     </mat-form-field>
     <mat-slide-toggle color='primary' formControlName='hasKey'>I have a tuning orb</mat-slide-toggle>
-    <mat-slide-toggle color='primary' formControlName='hasMutated'>Mutated</mat-slide-toggle>
+    <mat-form-field appearance='fill'>
+    <mat-slide-toggle color='primary' [(ngModel)]='Mutated'>Mutated</mat-slide-toggle>
+    <mat-select formControlName='hasMutated'>
+      <mat-option value='{{role.TANK}}'>Tank</mat-option>
+      <mat-option value='{{role.DAMAGE}}'>Damage</mat-option>
+      <mat-option value='{{role.HEAL}}'>Heal</mat-option>
+    </mat-select>
+  </mat-form-field>
   </div>
 
 <div mat-dialog-actions class='flex flex-right'>
