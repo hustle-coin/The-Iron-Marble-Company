@@ -25,6 +25,10 @@ export const routes: Routes = [
     loadChildren: () => import('./pages/admin/admin-page.module').then((m) => m.AdminPageModule)
   },
   {
+    path: 'officer',
+    loadChildren: () => import('./pages/officer/officer-page.module').then((m) => m.OfficerPageModule)
+  },
+  {
     path: 'company',
     loadChildren: () => import('./pages/company/company-page.module').then((m) => m.CompanyPageModule)
   },

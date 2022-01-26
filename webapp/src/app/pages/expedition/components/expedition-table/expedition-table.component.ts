@@ -201,7 +201,7 @@ export class ExpeditionTableComponent implements OnInit, AfterViewInit {
   isOwner(expedition: Expedition): Observable<boolean> {
     return this.userService.getUser$().pipe(
       map((user) => {
-        if (user.permissions.includes(Permission.ADMIN)) {
+        if (user.permissions.includes(Permission.ADMIN || user.permissions.includes(Permission.OFFICER)) {
           return true;
         }
         return expedition.owner.userId === user.id;
