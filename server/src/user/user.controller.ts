@@ -7,7 +7,7 @@ import { LoggedIn, Public, RequiredPermissions } from '../login/login.decorator'
 import { Permission, UserAvatar, UserWithPermissions } from '@The-Iron-Marble-Company/model';
 
 @Controller('/api/user')
-@RequiredPermissions(Permission.ENABLED)
+@RequiredPermissions(Permission.ENABLED || Permission.COMPANY)
 export class UserController {
   constructor(private userService: UserService, private tokenService: TokenService) {}
 

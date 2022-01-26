@@ -15,7 +15,7 @@ import { CharacterDeleteComponent } from '../character-delete/character-delete.c
   styleUrls: ['./users-table.component.css']
 })
 export class UsersTableComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'characterName', 'discordUsername', 'discordId', 'enabled', 'admin', 'delete'];
+  displayedColumns: string[] = ['id', 'characterName', 'discordUsername', 'discordId', 'enabled', 'company', 'admin', 'delete'];
 
   displayedData: UserWithPermissions[] = [];
   data: UserWithPermissions[] = [];
@@ -60,6 +60,23 @@ export class UsersTableComponent implements OnInit {
       .toPromise();
   }
 
+  async company(change: MatSlideToggleChange, user: User): Promise<void> {
+    await this.userService
+      .getUser$()
+      .pipe(
+        map((currentUser) => {
+          //dont disable yourself ;)
+          if (currentUser.id === user.id) {
+            return;
+          }
+          this.adminService
+            .setCompany(user.id, change.checked)
+            .subscribe(() => this.snackbarService.open(`User company: ${change.checked}`));
+        })
+      )
+      .toPromise();
+  }
+
   async admin(change: MatSlideToggleChange, user: User): Promise<void> {
     await this.userService
       .getUser$()
@@ -79,6 +96,10 @@ export class UsersTableComponent implements OnInit {
 
   isEnabled(user: UserWithPermissions): boolean {
     return !!user?.permissions?.includes(Permission.ENABLED);
+  }
+
+  isCompany(user: UserWithPermissions): boolean {
+    return !!user?.permissions?.includes(Permission.COMPANY);
   }
 
   isAdmin(user: UserWithPermissions): boolean {

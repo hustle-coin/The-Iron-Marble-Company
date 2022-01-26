@@ -69,7 +69,7 @@ export class UserService {
           discordUsername: user.discordUsername,
           characterName: user.characterName,
           UserPermission: {
-            create: [{ permission: Permission.ENABLED }, { permission: Permission.ADMIN }],
+            create: [{ permission: Permission.ENABLED }, { permission: Permission.COMPANY }, { permission: Permission.ADMIN }],
           },
         },
       });

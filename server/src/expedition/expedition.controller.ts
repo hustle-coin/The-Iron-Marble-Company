@@ -9,7 +9,7 @@ import { JoinExpeditionDto } from './dto/expedition.join.dto';
 import { LeaveExpeditionDto } from './dto/expedition.leave.dto';
 
 @Controller('/api/expedition')
-@RequiredPermissions(Permission.ENABLED)
+@RequiredPermissions(Permission.ENABLED || Permission.COMPANY)
 export class ExpeditionController {
   constructor(private expeditionService: ExpeditionService) {}
 
