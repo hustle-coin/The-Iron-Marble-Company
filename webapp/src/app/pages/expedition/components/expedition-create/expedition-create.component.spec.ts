@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { NgModule } from '@angular/core';
+
 import { ExpeditionCreateComponent } from './expedition-create.component';
 
 describe('ExpeditionCreateComponent', () => {
