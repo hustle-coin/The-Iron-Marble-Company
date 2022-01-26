@@ -16,7 +16,8 @@ export type Permissions = {
 export enum Permission {
   ENABLED = 'ENABLED',
   ADMIN = 'ADMIN',
-  COMPANY ='COMPANY',
+  COMPANY = 'COMPANY',
+  OFFICER = 'OFFICER',
 }
 
 export type UserWithPermissions = User & Permissions;

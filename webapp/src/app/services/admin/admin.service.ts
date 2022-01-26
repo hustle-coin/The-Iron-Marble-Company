@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { map, mergeMap } from 'rxjs/operators';
-import { AdminUser, DeleteUser, EnableUser, CompanyUser, UserWithPermissions, Version } from '@The-Iron-Marble-Company/model';
+import { AdminUser, DeleteUser, EnableUser, OfficerUser, CompanyUser, UserWithPermissions, Version } from '@The-Iron-Marble-Company/model';
 
 @Injectable({
   providedIn: 'root'
@@ -28,6 +28,14 @@ export class AdminService {
       company
     };
     return this.http.post(`/api/admin/users/company`, payload, { withCredentials: true });
+  }
+
+  public setOfficer(id: number, company: boolean): Observable<unknown> {
+    const payload: OfficerUser = {
+      userId: id,
+      officer
+    };
+    return this.http.post(`/api/admin/users/officer`, payload, { withCredentials: true });
   }
 
   public setAdmin(id: number, admin: boolean): Observable<unknown> {

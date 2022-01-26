@@ -19,6 +19,11 @@ export interface CompanyUser {
   company: boolean;
 }
 
+export interface OfficerUser {
+  userId: number;
+  officer: boolean;
+}
+
 export interface DeleteUser {
   userId: number;
 }

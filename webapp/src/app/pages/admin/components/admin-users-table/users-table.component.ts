@@ -15,7 +15,7 @@ import { CharacterDeleteComponent } from '../character-delete/character-delete.c
   styleUrls: ['./users-table.component.css']
 })
 export class UsersTableComponent implements OnInit {
-  displayedColumns: string[] = ['id', 'characterName', 'discordUsername', 'discordId', 'enabled', 'company', 'admin', 'delete'];
+  displayedColumns: string[] = ['id', 'characterName', 'discordUsername', 'discordId', 'enabled', 'company', 'officer', 'admin', 'delete'];
 
   displayedData: UserWithPermissions[] = [];
   data: UserWithPermissions[] = [];
@@ -54,7 +54,24 @@ export class UsersTableComponent implements OnInit {
           }
           this.adminService
             .setEnabled(user.id, change.checked)
-            .subscribe(() => this.snackbarService.open(`User enabled: ${change.checked}`));
+            .subscribe(() => this.snackbarService.open(`User Activated: ${change.checked}`));
+        })
+      )
+      .toPromise();
+  }
+
+  async officer(change: MatSlideToggleChange, user: User): Promise<void> {
+    await this.userService
+      .getUser$()
+      .pipe(
+        map((currentUser) => {
+          //dont disable yourself ;)
+          if (currentUser.id === user.id) {
+            return;
+          }
+          this.adminService
+            .setOfficer(user.id, change.checked)
+            .subscribe(() => this.snackbarService.open(`Promoted to Officer: ${change.checked}`));
         })
       )
       .toPromise();
@@ -71,7 +88,7 @@ export class UsersTableComponent implements OnInit {
           }
           this.adminService
             .setCompany(user.id, change.checked)
-            .subscribe(() => this.snackbarService.open(`User company: ${change.checked}`));
+            .subscribe(() => this.snackbarService.open(`Company Member: ${change.checked}`));
         })
       )
       .toPromise();
@@ -88,7 +105,7 @@ export class UsersTableComponent implements OnInit {
           }
           this.adminService
             .setAdmin(user.id, change.checked)
-            .subscribe(() => this.snackbarService.open(`User admin: ${change.checked}`));
+            .subscribe(() => this.snackbarService.open(`Site Admin: ${change.checked}`));
         })
       )
       .toPromise();
@@ -100,6 +117,10 @@ export class UsersTableComponent implements OnInit {
 
   isCompany(user: UserWithPermissions): boolean {
     return !!user?.permissions?.includes(Permission.COMPANY);
+  }
+
+  isOfficer(user: UserWithPermissions): boolean {
+    return !!user?.permissions?.includes(Permission.OFFICER);
   }
 
   isAdmin(user: UserWithPermissions): boolean {

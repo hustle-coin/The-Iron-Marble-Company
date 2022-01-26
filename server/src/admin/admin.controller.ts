@@ -3,6 +3,7 @@ import { UserService } from '../user/user.service';
 import { AdminService } from './admin.service';
 import { Public, RequiredPermissions } from '../login/login.decorator';
 import { EnableUserDto } from './dto/user.enable.dto';
+import { OfficerUserDto } from './dto/user.officer.dto';
 import { CompanyUserDto } from './dto/user.company.dto';
 import { AdminUserDto } from './dto/user.admin.dto';
 import { Permission, UserWithPermissions, Version } from '@The-Iron-Marble-Company/model';
@@ -30,6 +31,15 @@ export class AdminController {
       await this.userService.setPermission(body.userId, Permission.ENABLED);
     } else {
       await this.userService.removePermission(body.userId, Permission.ENABLED);
+    }
+  }
+
+  @Post('/users/officer')
+  async setOfficer(@Body() body: OfficerUserDto): Promise<void> {
+    if (body.officer) {
+      await this.userService.setPermission(body.userId, Permission.OFFICER);
+    } else {
+      await this.userService.removePermission(body.userId, Permission.OFFICER);
     }
   }
 

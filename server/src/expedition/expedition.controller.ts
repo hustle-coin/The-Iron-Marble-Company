@@ -26,7 +26,7 @@ export class ExpeditionController {
   @Post('/delete')
   async deleteExpedition(@Req() request: Request, @Body() body: DeleteExpeditionDto): Promise<void> {
     const expedition = await this.expeditionService.findById(body.id);
-    if (request.user.id === expedition.owner.userId || request.user.permissions.includes(Permission.ADMIN)) {
+    if (request.user.id === expedition.owner.userId || request.user.permissions.includes(Permission.ADMIN) || request.user.permissions.includes(Permission.OFFICER)) {
       await this.expeditionService.delete(body.id);
     } else {
       throw new HttpException('you are not the owner of this expedition', 403);
