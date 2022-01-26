@@ -69,7 +69,7 @@ export class NavigationService {
 
   getNavigationItems(): Observable<NavigationItem[]> {
     const navigation = this.basicNavigation.concat(this.pluginNavigation);
-    return this.isAdmin().pipe(
+    if return this.isAdmin().pipe(
       map((admin) => {
         if (!admin) {
           return navigation;
@@ -78,6 +78,7 @@ export class NavigationService {
         }
       })
     );
+    else
     return this.isOfficer().pipe(
       map((officer) => {
         if (!officer) {
