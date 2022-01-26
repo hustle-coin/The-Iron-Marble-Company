@@ -6,6 +6,7 @@ import { LoginModule } from './login/login.module';
 import { DatabaseModule } from './database/database.module';
 import { TokenModule } from './token/token.module';
 import { AdminModule } from './admin/admin.module';
+import { OfficerModule } from './officer/officer.module';
 import { CharacterModule } from './character/character.module';
 import { PluginModule } from './plugin/plugin.module';
 import { FrontendMiddleware } from './middleware/frontend.middleware';
@@ -32,6 +33,7 @@ import { MaintenanceMiddleware } from './middleware/maintenance.middleware';
     UserModule,
     LoginModule,
     AdminModule,
+    OfficerModule,
     CharacterModule,
     PluginModule,
   ],

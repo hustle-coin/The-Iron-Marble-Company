@@ -38,6 +38,14 @@ export class NavigationService {
     }
   ];
 
+  private officerNavigation: NavigationItem[] = [
+    {
+      label: 'Administration',
+      routerLink: 'officer',
+      icon: 'officer_panel_settings'
+    }
+  ];
+
   private pluginNavigation: NavigationItem[] = [];
 
   constructor(private userService: UserService /* private pluginService: PluginService*/) {
@@ -55,6 +63,10 @@ export class NavigationService {
     return this.userService.getUser$().pipe(map((user) => !!user?.permissions?.includes(Permission.ADMIN)));
   }
 
+  isOfficer(): Observable<boolean> {
+    return this.userService.getUser$().pipe(map((user) => !!user?.permissions?.includes(Permission.OFFICER)));
+  }
+
   getNavigationItems(): Observable<NavigationItem[]> {
     const navigation = this.basicNavigation.concat(this.pluginNavigation);
     return this.isAdmin().pipe(
@@ -66,5 +78,16 @@ export class NavigationService {
         }
       })
     );
+
+    return this.isOfficer().pipe(
+      map((officer) => {
+        if (!officer) {
+          return navigation;
+        } else {
+          return navigation.concat(this.officerNavigation);
+        }
+      })
+    );
   }
+
 }

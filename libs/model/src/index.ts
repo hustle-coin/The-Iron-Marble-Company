@@ -1,4 +1,5 @@
 export * from './admin.model';
+export * from './officer.model';
 export * from './calendar.model';
 export * from './character.model';
 export * from './config.model';

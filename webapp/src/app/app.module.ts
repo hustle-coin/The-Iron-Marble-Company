@@ -8,6 +8,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgcCookieConsentConfig, NgcCookieConsentModule, NgcCookieConsentService } from 'ngx-cookieconsent';
 import { LoginGuard } from './guards/login.guard';
 import { AdminGuard } from './guards/admin.guard';
+import { OfficerGuard } from './guards/officer.guard';
 import { ConfigService } from './services/config/config.service';
 import { ReactiveFormsModule } from '@angular/forms';
 import { TranslateLoader, TranslateModule, TranslateModuleConfig } from '@ngx-translate/core';
@@ -17,6 +18,7 @@ import { PluginModule } from './services/plugin/plugin.module';
 import { UserModule } from './services/user/user.module';
 import { NavigationModule } from './services/navigation/navigation.module';
 import { AdminModule } from './services/admin/admin.module';
+import { OfficerModule } from './services/officer/officer.module';
 import { CharacterModule } from './services/character/character.module';
 import { InterceptorModule } from './interceptor/interceptor.module';
 import { MatMomentDateModule } from '@angular/material-moment-adapter';
@@ -78,6 +80,7 @@ FullCalendarModule.registerPlugins([dayGridPlugin, timeGridPlugin, interactionPl
     // Services
     ConfigModule,
     AdminModule,
+    OfficerModule,
     CharacterModule,
     ExpeditionModule,
     NavigationModule,
@@ -89,7 +92,7 @@ FullCalendarModule.registerPlugins([dayGridPlugin, timeGridPlugin, interactionPl
     FooterModule,
     ConfirmDialogModule
   ],
-  providers: [{ provide: LOCALE_ID, useValue: 'en-GB' }, AppComponent, LoginGuard, AdminGuard],
+  providers: [{ provide: LOCALE_ID, useValue: 'en-GB' }, AppComponent, LoginGuard, AdminGuard, OfficerGuard],
   bootstrap: [AppComponent],
   exports: []
 })
