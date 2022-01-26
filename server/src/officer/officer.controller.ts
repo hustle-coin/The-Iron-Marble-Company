@@ -9,7 +9,7 @@ import { Permission, UserWithPermissions } from '@The-Iron-Marble-Company/model'
 @RequiredPermissions(Permission.OFFICER)
 @UseInterceptors(CacheInterceptor)
 export class OfficerController {
-  constructor(private userService: UserService, private officerService: OfficerService) {}
+  constructor(private userService: UserService) {}
 
   @Get('/users')
   async getAllUsers(): Promise<UserWithPermissions[]> {

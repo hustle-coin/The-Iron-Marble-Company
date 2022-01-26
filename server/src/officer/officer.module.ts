@@ -7,7 +7,5 @@ import { EventModule } from '../event/event.module';
 @Module({
   imports: [UserModule, ArgsModule, EventModule],
   controllers: [OfficerController],
-  providers: [OfficerService],
-  exports: [OfficerService],
 })
 export class OfficerModule {}

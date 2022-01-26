@@ -1,11 +1,5 @@
 import { Event } from './event.model';
 
-export interface EnableUser {
-  userId: number;
-  enabled: boolean;
-}
+import { EnableUser } from './admin.model';
 
-export interface CompanyUser {
-  userId: number;
-  company: boolean;
-}
+import { CompanyUser } from './admin.model';
