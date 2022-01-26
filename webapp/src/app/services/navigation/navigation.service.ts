@@ -78,10 +78,6 @@ export class NavigationService {
         }
       })
     );
-  }
-
-  getNavigationItems(): Observable<NavigationItem[]> {
-    const navigation = this.basicNavigation.concat(this.pluginNavigation);
     return this.isOfficer().pipe(
       map((officer) => {
         if (!officer) {
@@ -92,4 +88,5 @@ export class NavigationService {
       })
     );
   }
+
 }
