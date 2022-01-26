@@ -37,6 +37,7 @@ export class ExpeditionService {
           name: true,
           beginDateTime: true,
           User: true,
+          hasMutatedOrb: true,
           ExpeditionParticipant: {
             include: {
               User: true,
@@ -58,6 +59,7 @@ export class ExpeditionService {
           name: true,
           beginDateTime: true,
           User: true,
+          hasMutatedOrb: true,
           ExpeditionParticipant: {
             include: {
               User: true,
