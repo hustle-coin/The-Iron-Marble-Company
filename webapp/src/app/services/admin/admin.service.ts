@@ -30,7 +30,7 @@ export class AdminService {
     return this.http.post(`/api/admin/users/company`, payload, { withCredentials: true });
   }
 
-  public setOfficer(id: number, company: boolean): Observable<unknown> {
+  public setOfficer(id: number, officer: boolean): Observable<unknown> {
     const payload: OfficerUser = {
       userId: id,
       officer
