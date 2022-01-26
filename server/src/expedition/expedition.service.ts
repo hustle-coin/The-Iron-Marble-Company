@@ -158,6 +158,7 @@ export class ExpeditionService {
     return {
       id: result.id,
       name: result.name,
+      hasMutatedOrb: result.hasMutatedOrb,
       beginDateTime: result.beginDateTime.toISOString(),
       owner: {
         userId: result.User.id,
