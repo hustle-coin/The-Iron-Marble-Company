@@ -30,7 +30,7 @@ export type Slot = {
   styleUrls: ['./expedition-table.component.css']
 })
 export class ExpeditionTableComponent implements OnInit, AfterViewInit {
-  displayedColumns: string[] = ['planned', 'name', 'owner', 'tuning-orb', 'participants', 'delete'];
+  displayedColumns: string[] = ['planned', 'name', 'owner', 'tuning-orb', 'mutated-orb', 'participants', 'delete'];
   dataSource = new MatTableDataSource<Expedition>();
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
