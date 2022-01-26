@@ -20,6 +20,7 @@ type ExpeditionQueryResult = {
   id: number;
   name: string;
   beginDateTime: Date;
+  hasMutatedOrb: hasMutatedOrb;
   User: User;
   ExpeditionParticipant: (ExpeditionParticipant & { User: User })[];
 };
